@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Vue</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<div id="app">
+  <p v-if="seen">You can see me now</p>
+</div>
+</html>
+
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      seen: true
+    }
+  })
+</script>
